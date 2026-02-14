@@ -7,10 +7,15 @@
 </head>
 <body>
     <h1>AI Scam Detector</h1>
+
+    <!-- Input + button -->
     <label>
-        <input type="text" name="text-box" placeholder="Enter gmail!">
+        <input type="text" id="text-box" placeholder="Enter gmail!">
         <button onclick="storeValue()">Store</button>
     </label>
+
+    <!-- AI result will be shown here -->
+    <div id="aiOutput" style="margin-top: 20px; font-weight: bold;"></div>
 
     <script src="script.js"></script>
 </body>
