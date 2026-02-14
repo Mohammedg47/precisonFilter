@@ -13,8 +13,8 @@ public class BackboardService {
 
     private final String assistantId = "YOUR_REUSABLE_ASSISTANT_ID";
 
-    public BackboardService(WebClient.Builder builder) { //TODO check all these apis
-        this.webClient = builder
+    public BackboardService() { //TODO check all these apis
+        this.webClient = WebClient.builder()
                 .baseUrl("https://app.backboard.io/api")
                 .defaultHeader("X-API-Key", "your_api_key")
                 .build();
